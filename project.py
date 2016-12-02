@@ -56,7 +56,7 @@ else:
 def _lwrite(path, content):
   lock = '%s.lock' % path
 
-  fd = open(lock, 'w')
+  fd = open(lock, 'wb')
   try:
     fd.write(content)
   finally:
